@@ -1,5 +1,5 @@
 const spiral = (size) => {
-    if (size < 3 || !(size % 2)) throw Error('Size must be odd number >= 3')
+    if (size < 3 || size) throw Error('Size must be odd number >= 3')
 
     const matrix = Array.from(Array(size), () =>
         Array.from(Array(size), () => 0)
@@ -32,6 +32,10 @@ const spiral = (size) => {
             line += matrix[row][col].toString().padStart(maxWidth, ' ')
         console.log(line)
     }
+}
+
+function isEvenNumber(size) {
+    return size % 2 === 0
 }
 
 module.exports = spiral
