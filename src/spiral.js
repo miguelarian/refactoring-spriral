@@ -25,6 +25,10 @@ const spiral = (size) => {
         direction = ++direction % 4
     }
 
+    paintSpiral(size, row, col, matrix)
+}
+
+function paintSpiral(size, row, col, matrix) {
     let line
     const maxWidth = (size * size).toString().length + 1
     for (row = 0; row < size; row++) {
