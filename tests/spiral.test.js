@@ -1,6 +1,6 @@
 const spiral = require('../src/spiral')
 
-describe('spiral of less than 3', () => {
+describe('spiral of size < 3', () => {
     it('should throw an error for 0', () => {
         expect(() => spiral(0)).toThrowError('Size must be odd number >= 3')
     })
@@ -14,7 +14,7 @@ describe('spiral of less than 3', () => {
     })
 })
 
-describe('spiral of odd number > 3', () => {
+describe('spiral of size to be odd number > 3', () => {
     it('should throw an error for 4', () => {
         expect(() => spiral(4)).toThrowError('Size must be odd number >= 3')
     })
