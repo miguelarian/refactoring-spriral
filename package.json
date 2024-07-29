@@ -5,7 +5,8 @@
     "main": "spiral.js",
     "scripts": {
         "test": "jest",
-        "format": "prettier --write ."
+        "format": "prettier --write .",
+        "start": "node src/spiral.js"
     },
     "repository": {
         "type": "git",
