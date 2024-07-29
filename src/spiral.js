@@ -6,9 +6,7 @@ const spiral = (size) => {
 }
 
 function getSpiralMatrix(size) {
-    const matrix = Array.from(Array(size), () =>
-        Array.from(Array(size), () => 0)
-    )
+    const matrix = generateZeroMatrix(size)
     let row = Math.floor(size / 2)
     let col = row
     let direction = 0
@@ -29,6 +27,10 @@ function getSpiralMatrix(size) {
         direction = ++direction % 4
     }
     return matrix
+}
+
+function generateZeroMatrix(size) {
+    return Array.from(Array(size), () => Array.from(Array(size), () => 0))
 }
 
 function paintSpiral(size, matrix) {
