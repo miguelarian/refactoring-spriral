@@ -1,0 +1,22 @@
+{
+  "name": "refactoring-spriral",
+  "version": "1.0.0",
+  "description": "A refactorization exercise",
+  "main": "spiral.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miguelarian/refactoring-spriral.git"
+  },
+  "keywords": [
+    "refactoring"
+  ],
+  "author": "Miguel Vela Romera",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/miguelarian/refactoring-spriral/issues"
+  },
+  "homepage": "https://github.com/miguelarian/refactoring-spriral#readme"
+}
