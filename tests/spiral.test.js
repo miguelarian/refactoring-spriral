@@ -13,3 +13,9 @@ describe('spiral of less than 3', () => {
         expect(() => spiral(2)).toThrowError('Size must be odd number >= 3')
     })
 })
+
+describe('spiral of odd number > 3', () => {
+    it('should throw an error for 4', () => {
+        expect(() => spiral(4)).toThrowError('Size must be odd number >= 3')
+    })
+})
