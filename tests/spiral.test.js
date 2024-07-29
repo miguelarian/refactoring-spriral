@@ -19,3 +19,15 @@ describe('spiral of size to be odd number > 3', () => {
         expect(() => spiral(4)).toThrowError('Size must be odd number >= 3')
     })
 })
+
+describe('spiral of size', () => {
+    ;[3, 5, 7, 9].forEach((size) => {
+        it(`should print spiral of size ${size}`, () => {
+            let outputData = ''
+            const storeLog = (inputs) => (outputData += inputs)
+            console['log'] = jest.fn(storeLog)
+            spiral(size)
+            expect(outputData).toMatchSnapshot()
+        })
+    })
+})
