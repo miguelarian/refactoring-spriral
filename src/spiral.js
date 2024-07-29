@@ -1,5 +1,6 @@
 const spiral = (size) => {
-    if (size < 3 || size) throw Error('Size must be odd number >= 3')
+    if (size < 3 || isEvenNumber(size))
+        throw Error('Size must be odd number >= 3')
 
     const matrix = Array.from(Array(size), () =>
         Array.from(Array(size), () => 0)
