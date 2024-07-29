@@ -2,6 +2,10 @@ const spiral = (size) => {
     if (size < 3 || isEvenNumber(size))
         throw Error('Size must be odd number >= 3')
 
+    paintSpiral(size, getSpiralMatrix(size))
+}
+
+function getSpiralMatrix(size) {
     const matrix = Array.from(Array(size), () =>
         Array.from(Array(size), () => 0)
     )
@@ -24,16 +28,15 @@ const spiral = (size) => {
 
         direction = ++direction % 4
     }
-
-    paintSpiral(size, row, col, matrix)
+    return matrix
 }
 
-function paintSpiral(size, row, col, matrix) {
+function paintSpiral(size, matrix) {
     let line
     const maxWidth = (size * size).toString().length + 1
-    for (row = 0; row < size; row++) {
+    for (let row = 0; row < size; row++) {
         line = ''
-        for (col = 0; col < size; col++)
+        for (let col = 0; col < size; col++)
             line += matrix[row][col].toString().padStart(maxWidth, ' ')
         console.log(line)
     }
