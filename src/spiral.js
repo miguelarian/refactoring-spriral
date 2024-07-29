@@ -34,4 +34,4 @@ const spiral = (size) => {
     }
 }
 
-spiral(5)
+module.exports = spiral
