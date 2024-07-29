@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/miguelarian/refactoring-spriral/issues"
   },
-  "homepage": "https://github.com/miguelarian/refactoring-spriral#readme"
+  "homepage": "https://github.com/miguelarian/refactoring-spriral#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
 }
